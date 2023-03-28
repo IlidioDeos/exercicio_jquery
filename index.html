@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO Minimalista</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1>TODO</h1>
+        <form id="meu-formulario">
+            <label for="nova-tarefa"></label>
+            <input type="text" id="nova-tarefa" name="nova-tarefa" placeholder="Digite uma tarefa" required>
+            <button type="submit" id="adicionar-tarefa">Adicionar</button>
+            <button type="reset" id="limpar">Limpar</button>
+        </form>
+    </header>
+    <div>
+        <ul id="lista">
+            <li class="tarefa">Estudar</li>
+            <li class="tarefa">Comer</li>
+            <li class="tarefa">Dormir</li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
