@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header > .container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+}
+
+.container-form > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form > form > input{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-form > form > label{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container-form > form > button{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
