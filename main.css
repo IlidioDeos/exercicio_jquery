@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.054)), url(./images/supermarket-949913_1280\(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.texto-sobre {
+    width: 65%;
+    height: 20%;
+    color: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.306), rgba(4, 9, 30, 0.297));
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 40px;
+}
+
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+
+button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin-top: 100px;
+}
+
+@media screen and (min-width:1px) and (max-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 40px;
+    }
+
+    header > .menu {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+    header > .menu {
+        display: block;
+    }
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 40px;
+    }
+
+    img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
